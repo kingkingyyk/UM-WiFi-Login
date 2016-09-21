@@ -3,8 +3,8 @@
 Automated login for the annoying WiFi login in University of Malaya
 
 Installation Step :
-- Download Executable (https://github.com/kingkingyyk/UM-WiFi-Login/raw/master/UM-WiFi-Login-1.1.exe)
-- Open your startup folder (On desktop, press Win+R, type shell:startup)
+- Download executable (https://github.com/kingkingyyk/UM-WiFi-Login/raw/master/UM-WiFi-Login-1.1.exe)
+- Open your startup folder (On desktop, press Win+R, type shell:startup, press OK button)
 - Paste the executable in
 - Double click, it will prompt you for the credential. Fill in and click OK.
 - You should be able to see the icon in your system tray. It will be started automatically when your computer starts!
