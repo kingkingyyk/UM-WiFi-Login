@@ -147,8 +147,8 @@ public class umwifilogin {
 							br.close();
 							is.close();
 							conn.disconnect();
-							SysTrayIcn.displayMessage("UM WiFi Auto Login", "UM WiFi detected, logging in...", TrayIcon.MessageType.INFO);
 							if (htmlCode.size()>=3 && htmlCode.get(2).contains("arubalp=")) {
+								SysTrayIcn.displayMessage("UM WiFi Auto Login", "UM WiFi detected, logging in...", TrayIcon.MessageType.INFO);
 								WebClient client=new WebClient();
 								HtmlPage page=client.getPage("http://www.google.com.my");
 								HtmlForm f=page.getForms().get(0);
