@@ -29,7 +29,7 @@ public class umwifilogin {
 	public static ImageIcon LogoIcon=new ImageIcon(Toolkit.getDefaultToolkit().getClass().getResource("/img-logo.png"));
 	public static Image LogoImage=LogoIcon.getImage();
 	public static File ConfigFile=new File(System.getProperty("java.io.tmpdir")+"\\UMWiFiLogin.txt");
-	public static String Version="v1.2";
+	public static String Version="v1.2.1";
 	public static String username;
 	public static String password;
 	public static boolean lastLoginFailed=false;
@@ -141,9 +141,8 @@ public class umwifilogin {
 								url=new URL("http://unified.um.edu.my/eportal/InterFace.do?method=login&time=Tue%20Oct%2004%202016%2008:50:45%20GMT+0800%20(Malay%20Peninsula%20Standard%20Time)");
 								HttpURLConnection.setFollowRedirects(true);
 								conn=(HttpURLConnection) url.openConnection();
-								s=s.replace("<script>top.self.location.href='http://unified.um.edu.my/eportal/index.jsp?","").replaceAll("'</script>","");
+								s=s.replace("<script>top.self.location.href='https://unified.um.edu.my/eportal/index.jsp?","").replaceAll("'</script>","");
 								s=s.replaceAll("=","%253D").replaceAll("&","%2526");
-								
 								StringBuilder sb=new StringBuilder();
 								sb.append("userId="); sb.append(username); sb.append("&");
 								sb.append("password="); sb.append(password); sb.append("&");
@@ -151,7 +150,6 @@ public class umwifilogin {
 								sb.append("queryString="); sb.append(s); sb.append("&");
 								sb.append("operatorPwd="); sb.append("&"); sb.append("validcode=");
 								s=sb.toString();
-								
 								conn.setRequestMethod("POST");
 								conn.setRequestProperty("User-Agent","Mozilla/5.0");
 								conn.setRequestProperty("Accept-Language","en-US, en;q=0.5");
@@ -163,9 +161,8 @@ public class umwifilogin {
 								
 								is=conn.getInputStream();
 								br=new BufferedReader(new InputStreamReader(is));
-								while ((s=br.readLine())!=null) {
-									System.out.println(s);
-								}
+								br.close();
+								is.close();
 							}
 						} catch (Exception e) {
 							e.printStackTrace();
