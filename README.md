@@ -8,7 +8,7 @@ Changelog :-
 
 Usage Guide :-
 For New User :
-- Download executable (https://github.com/kingkingyyk/UM-WiFi-Login/raw/master/UM-WiFi-Login-1.2.1.exe)
+- Download executable (https://github.com/kingkingyyk/UM-WiFi-Login/raw/master/UM-WiFi-Login-1.2.2.exe)
 - Open your startup folder (On desktop, press Win+R, type shell:startup, press OK button)
 - Paste the executable in
 - Double click, it will prompt you for the credential. Fill in and click OK.
@@ -18,7 +18,7 @@ For New User :
 
 For Existing User :
 - Exit the application by right clicking the UM icon in your system tray, click Exit.
-- Download the executable (https://github.com/kingkingyyk/UM-WiFi-Login/raw/master/UM-WiFi-Login-1.2.1.exe)
+- Download the executable (https://github.com/kingkingyyk/UM-WiFi-Login/raw/master/UM-WiFi-Login-1.2.2.exe)
 - Open your startup folder (On desktop, press Win+R, type shell:startup, press OK button)
 - Delete the old executable
 - Paste the new executable in
